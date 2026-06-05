@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Plumbers in Tucson, Arizona | Top Rated Plumbing Services</title>
-    <meta name="description" content="Find the best plumbers in Tucson, Arizona. Top-rated, licensed, and insured plumbing services for all your residential and commercial needs.">
+    <title>Best Plumbers in Tucson, AZ</title>
+    <meta name="description" content="Find the best plumbers in Tucson, AZ. Top-rated, licensed, and insured plumber services for residential and commercial needs.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
         header { background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%); color: white; padding: 60px 0 40px; text-align: center; }
         header h1 { font-size: 2.5rem; margin-bottom: 10px; }
         header p { font-size: 1.1rem; opacity: 0.9; }
@@ -17,10 +16,8 @@
         nav .container { display: flex; gap: 25px; flex-wrap: wrap; }
         nav a { color: #e2e8f0; text-decoration: none; font-size: 0.95rem; padding: 5px 0; }
         nav a:hover { color: white; }
-        
         section { padding: 40px 0; }
         section h2 { font-size: 1.8rem; margin-bottom: 25px; color: #1a365d; }
-        
         .plumber-card { background: white; border-radius: 10px; padding: 25px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e2e8f0; }
         .plumber-card.featured { border-left-color: #f6ad55; }
         .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 12px; flex-wrap: wrap; }
@@ -30,6 +27,7 @@
         .featured-badge { background: #fefcbf; color: #744210; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
         .description { color: #4a5568; margin-bottom: 12px; }
         .card-details { display: flex; gap: 20px; flex-wrap: wrap; font-size: 0.9rem; color: #718096; margin-bottom: 15px; }
+        .card-details a { color: #3182ce; text-decoration: none; }
         .card-actions { display: flex; gap: 10px; }
         .btn { padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
         .btn-call { background: #38a169; color: white; }
@@ -37,47 +35,41 @@
         .btn-quote { background: #3182ce; color: white; }
         .btn-quote:hover { background: #2b6cb0; }
         
-        .guide-content { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-        .guide-content h3 { color: #2d3748; margin: 20px 0 10px; }
-        
-        .faq-item { background: white; border-radius: 8px; padding: 20px 25px; margin-bottom: 12px; cursor: pointer; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+        .guide-content, .faq-section, .contact-section { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .faq-item { cursor: pointer; padding: 15px 0; border-bottom: 1px solid #edf2f7; }
         .faq-item h3 { font-size: 1rem; color: #1a365d; }
-        .faq-item .answer { display: none; margin-top: 12px; color: #4a5568; }
+        .faq-item .answer { display: none; margin-top: 8px; color: #4a5568; }
         .faq-item.open .answer { display: block; }
+        .faq-item:last-child { border-bottom: none; }
         
-        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
         .blog-card { background: white; border-radius: 10px; padding: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-decoration: none; color: inherit; display: block; }
         .blog-card h3 { color: #1a365d; font-size: 1.05rem; margin-bottom: 10px; }
         .blog-card p { color: #4a5568; font-size: 0.9rem; }
         .blog-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); transition: all 0.2s; }
         
-        .contact-form { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 600px; }
+        .contact-form { max-width: 600px; margin: 0 auto; }
         .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #e2e8f0; border-radius: 6px; font-size: 1rem; }
         .contact-form textarea { min-height: 120px; }
         .contact-form button { background: #3182ce; color: white; border: none; padding: 12px 30px; border-radius: 6px; font-size: 1rem; cursor: pointer; }
         .contact-form button:hover { background: #2b6cb0; }
-        
         footer { background: #1a202c; color: #a0aec0; text-align: center; padding: 30px 0; font-size: 0.9rem; }
         footer a { color: #63b3ed; text-decoration: none; }
-        
-        @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .card-header { flex-direction: column; align-items: flex-start; }
-        }
+        @media (max-width: 768px) { header h1 { font-size: 1.8rem; } .card-header { flex-direction: column; align-items: flex-start; } }
     </style>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>🔧 Best Plumbers in Tucson, Arizona</h1>
-        <p>Your Trusted Source for Top-Rated Plumbing Services in the Old Pueblo</p>
+        <h1>🔧 Best Plumbers in Tucson, AZ</h1>
+        <p>Your trusted source for top-rated plumber services in Tucson, AZ</p>
     </div>
 </header>
 
 <nav>
     <div class="container">
-        <a href="#plumbers">Plumbers</a>
+        <a href="#listings">Listings</a>
         <a href="#guide">Guide</a>
         <a href="#blog">Blog</a>
         <a href="#faq">FAQ</a>
@@ -85,93 +77,130 @@
     </div>
 </nav>
 
-<section id="plumbers">
+<section id="listings">
     <div class="container">
         <h2>🏆 Top-Rated Plumbers in Tucson</h2>
-
-        <div class="plumber-card featured">
-            <div class="card-header">
-                <h3>Tucson Plumbing Pros</h3>
-                <div class="rating">★★★★<span style="color:#e2e8f0;">★</span> <span class="rating-num">4.8</span></div>
-                <span class="featured-badge">⭐ Featured</span>
-            </div>
-            <p class="description">Tucson Plumbing Pros has been serving the community for over 15 years, offering reliable and affordable plumbing solutions. They specialize in everything from minor leaks to major pipe replacements, ensuring your home stays dry and comfortable. Their team of licensed professionals is dedicated to providing exceptional customer service and lasting repairs.</p>
-            <div class="card-details">
-                <span>📍 123 Main Street, Tucson, AZ 85701</span>
-                <span>📞 <a href="tel:+15205551212">(520) 555-1212</a></span>
-            </div>
-            <div class="card-actions">
-                <a href="tel:+15205551212" class="btn btn-call">Call Now</a>
-                <a href="#contact" class="btn btn-quote">Get Quote</a>
-            </div>
+        <p style="margin-bottom: 20px; color: #718096;">Last updated: June 05, 2026</p>
+        
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Intelligent Design Air Conditioning, Plumbing, Solar, & Electric</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            <span class="featured-badge">⭐ Featured</span>
         </div>
-
-        <div class="plumber-card">
-            <div class="card-header">
-                <h3>Desert Drains Plumbing</h3>
-                <div class="rating">★★★★<span style="color:#e2e8f0;">★</span> <span class="rating-num">4.5</span></div>
-            </div>
-            <p class="description">Desert Drains Plumbing is your go-to for all your drain cleaning and unclogging needs in Tucson. They utilize the latest technology to quickly diagnose and resolve even the toughest clogs. Their emergency services are available 24/7, ensuring you're never left dealing with a plumbing disaster alone.</p>
-            <div class="card-details">
-                <span>📍 456 Oracle Road, Tucson, AZ 85705</span>
-                <span>📞 <a href="tel:+15205553434">(520) 555-3434</a></span>
-            </div>
-            <div class="card-actions">
-                <a href="tel:+15205553434" class="btn btn-call">Call Now</a>
-                <a href="#contact" class="btn btn-quote">Get Quote</a>
-            </div>
+        <p class="description">One of Tucson's most trusted full-service home service companies since 1979. They handle everything from plumbing repairs to AC installation and solar. Known for no trip charge and upfront pricing with consistently high ratings.</p>
+        <div class="card-details">
+            <span>📍 1145 East Fort Lowell Road, Tucson, AZ</span>
+            <span>📞 <a href="tel:(520) 815-5091">(520) 815-5091</a></span>
+            <span>🌐 <a href="https://idesignac.com" target="_blank" rel="noopener">Website</a></span>
         </div>
-
-        <div class="plumber-card featured">
-            <div class="card-header">
-                <h3>Sunrise Plumbing Solutions</h3>
-                <div class="rating">★★★★<span style="color:#e2e8f0;">★</span> <span class="rating-num">4.9</span></div>
-                <span class="featured-badge">⭐ Featured</span>
-            </div>
-            <p class="description">Sunrise Plumbing Solutions offers comprehensive plumbing services for both residential and commercial properties. They are experts in water heater repair and installation, ensuring you always have hot water when you need it. Their commitment to quality workmanship and customer satisfaction makes them a top choice in Tucson.</p>
-            <div class="card-details">
-                <span>📍 789 Speedway Boulevard, Tucson, AZ 85710</span>
-                <span>📞 <a href="tel:+15205555678">(520) 555-5678</a></span>
-            </div>
-            <div class="card-actions">
-                <a href="tel:+15205555678" class="btn btn-call">Call Now</a>
-                <a href="#contact" class="btn btn-quote">Get Quote</a>
-            </div>
+        <div class="card-actions">
+            <a href="tel:(520) 815-5091" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
         </div>
-
-        <div class="plumber-card">
-            <div class="card-header">
-                <h3>Pima Plumbing &amp; Water</h3>
-                <div class="rating">★★★★<span style="color:#e2e8f0;">★</span> <span class="rating-num">4.2</span></div>
-            </div>
-            <p class="description">Pima Plumbing &amp; Water is a family-owned business dedicated to providing honest and efficient plumbing services. They handle a wide range of issues, including leaky faucets, running toilets, and burst pipes. With competitive pricing and a focus on long-term solutions, they aim to build lasting relationships with their clients.</p>
-            <div class="card-details">
-                <span>📍 101 Broadway Boulevard, Tucson, AZ 85701</span>
-                <span>📞 <a href="tel:+15205559012">(520) 555-9012</a></span>
-            </div>
-            <div class="card-actions">
-                <a href="tel:+15205559012" class="btn btn-call">Call Now</a>
-                <a href="#contact" class="btn btn-quote">Get Quote</a>
-            </div>
+    </div>
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Nu Flow Tucson</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.9</span></div>
+            <span class="featured-badge">⭐ Featured</span>
         </div>
-
-        <div class="plumber-card featured">
-            <div class="card-header">
-                <h3>Catalina Plumbing Services</h3>
-                <div class="rating">★★★★<span style="color:#e2e8f0;">★</span> <span class="rating-num">4.7</span></div>
-                <span class="featured-badge">⭐ Featured</span>
-            </div>
-            <p class="description">For prompt and professional plumbing repairs, look no further than Catalina Plumbing Services. They are skilled in all aspects of plumbing, from fixture installations to complex repiping projects. Their licensed and insured technicians are committed to delivering reliable service and ensuring your complete satisfaction with every job.</p>
-            <div class="card-details">
-                <span>📍 210 Grant Road, Tucson, AZ 85716</span>
-                <span>📞 <a href="tel:+15205552345">(520) 555-2345</a></span>
-            </div>
-            <div class="card-actions">
-                <a href="tel:+15205552345" class="btn btn-call">Call Now</a>
-                <a href="#contact" class="btn btn-quote">Get Quote</a>
-            </div>
+        <p class="description">Nu Flow Tucson is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 3650 North Oracle Road, Tucson, AZ</span>
+            <span>📞 <a href="tel:(520) 468-7449">(520) 468-7449</a></span>
+            <span>🌐 <a href="https://nuflowtucson.com" target="_blank" rel="noopener">Website</a></span>
         </div>
-
+        <div class="card-actions">
+            <a href="tel:(520) 468-7449" class="btn btn-call">Call Now</a>
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card featured">
+        <div class="card-header">
+            <h3>Strongbuilt Plumbing, Air, Solar & Electric</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.8</span></div>
+            <span class="featured-badge">⭐ Featured</span>
+        </div>
+        <p class="description">A one-stop shop for all home service needs in Tucson. StrongBuilt offers comprehensive plumbing, air conditioning, solar, and electrical services. Known for their $59 repair special and reliable same-day service.</p>
+        <div class="card-details">
+            <span>📍 Tucson, AZ</span>
+            
+            <span>🌐 <a href="https://strongbuiltusa.com" target="_blank" rel="noopener">Website</a></span>
+        </div>
+        <div class="card-actions">
+            
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Al Coronado Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.7</span></div>
+            
+        </div>
+        <p class="description">Family-owned Tucson plumbing company serving the area for decades. Specializes in residential plumbing repairs, water heater installation, and drain cleaning. Known for honest pricing and quality workmanship.</p>
+        <div class="card-details">
+            <span>📍 Tucson, AZ</span>
+            
+            
+        </div>
+        <div class="card-actions">
+            
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Cal's Plumbing Inc.</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.6</span></div>
+            
+        </div>
+        <p class="description">A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service.</p>
+        <div class="card-details">
+            <span>📍 Tucson, AZ</span>
+            
+            
+        </div>
+        <div class="card-actions">
+            
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Plumber of Tucson</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.5</span></div>
+            
+        </div>
+        <p class="description">Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured.</p>
+        <div class="card-details">
+            <span>📍 Tucson, AZ</span>
+            
+            
+        </div>
+        <div class="card-actions">
+            
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
+    <div class="plumber-card">
+        <div class="card-header">
+            <h3>Curtis Plumbing</h3>
+            <div class="rating">★★★★½<span style='color:#e2e8f0;'></span> <span class="rating-num">4.4</span></div>
+            
+        </div>
+        <p class="description">A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area.</p>
+        <div class="card-details">
+            <span>📍 Tucson, AZ</span>
+            
+            
+        </div>
+        <div class="card-actions">
+            
+            <a href="#contact" class="btn btn-quote">Get Quote</a>
+        </div>
+    </div>
     </div>
 </section>
 
@@ -179,52 +208,46 @@
     <div class="container">
         <h2>📖 How to Choose a Plumber in Tucson</h2>
         <div class="guide-content">
-            <h2>How to Choose a Plumber in Tucson</h2>
-            <p>Finding a reliable plumber in Tucson can feel like searching for a needle in a haystack, especially during an emergency. The desert climate presents unique challenges — hard water, monsoon damage, aging pipes — so choosing the right pro matters.</p>
-            <h3>1. Check for Licensing and Insurance</h3>
-            <p>In Arizona, plumbers must be licensed by the Arizona Registrar of Contractors. Always ask for proof of licensing and liability insurance before hiring.</p>
+            <p>Finding the right plumber in Tucson doesn't have to be stressful. Here are some tips:</p>
+            <h3>1. Check Licensing and Insurance</h3>
+            <p>Always verify that your plumber is licensed and insured. In Arizona, the Registrar of Contractors handles licensing.</p>
             <h3>2. Read Reviews</h3>
-            <p>Check Google, Yelp, and Angie's List for consistent 4+ star ratings. Look for comments about punctuality, quality, and fair pricing.</p>
+            <p>Check Google, Yelp, and BBB ratings. Look for consistent 4+ star reviews.</p>
             <h3>3. Get Multiple Quotes</h3>
-            <p>For non-emergency work, get 3 quotes. Be wary of extremely low bids — they often mean shortcuts or hidden fees.</p>
+            <p>For non-emergency work, get at least 3 quotes. Be wary of extremely low bids.</p>
             <h3>4. Ask About Experience</h3>
-            <p>Different issues require different expertise. Ask how many similar jobs they've done in Tucson specifically.</p>
+            <p>Different jobs require different expertise. Ask how many similar projects they've completed.</p>
             <h3>5. Check Availability</h3>
-            <p>Plumbing emergencies don't keep business hours. Choose a plumber who offers 24/7 service if you have an older home.</p>
+            <p>Emergencies happen. A plumber with 24/7 service can save you thousands in damage.</p>
         </div>
     </div>
 </section>
 
 <section id="blog">
     <div class="container">
-        <h2>📝 Tucson Plumbing Blog</h2>
+        <h2>📝 Tucson Plumber Blog</h2>
         <div class="blog-grid">
-
-            <a href="blog/hard-water-damage.html" class="blog-card">
-                <h3>3 Signs Your Tucson Home Has Hard Water Damage</h3>
-                <p>Scale buildup on fixtures, reduced water pressure, spotty dishes — learn the warning signs of hard water damage in your Tucson home...</p>
-            </a>
-
-            <a href="blog/emergency-vs-scheduled.html" class="blog-card">
-                <h3>Emergency Plumber vs. Scheduled Repair: When to Call</h3>
-                <p>Burst pipe? Call now. Dripping faucet? It can wait. Learn the difference between a plumbing emergency and a scheduled repair...</p>
-            </a>
-
-            <a href="blog/monsoon-plumbing.html" class="blog-card">
-                <h3>How Monsoon Season Affects Your Plumbing in Tucson</h3>
-                <p>June-September monsoons bring heavy rain that can cause clogs, foundation shifts, and septic issues. Here's how to prepare...</p>
-            </a>
-
-            <a href="blog/water-heater-maintenance.html" class="blog-card">
-                <h3>Water Heater Maintenance for Arizona Homes</h3>
-                <p>Arizona's hard water is brutal on water heaters. Annual draining, anode rod checks, and T&P valve testing can extend its life significantly...</p>
-            </a>
-
+            
             <a href="blog/copper-vs-pex.html" class="blog-card">
-                <h3>Tucson Pipe Repair: Copper vs. PEX</h3>
-                <p>Copper is durable but expensive. PEX is flexible and affordable. Which is right for your Tucson home? We break it down...</p>
+                <h3>Copper Vs Pex</h3>
+                <p>Read our guide on copper vs pex for Tucson homeowners...</p>
             </a>
-
+            <a href="blog/emergency-vs-scheduled.html" class="blog-card">
+                <h3>Emergency Vs Scheduled</h3>
+                <p>Read our guide on emergency vs scheduled for Tucson homeowners...</p>
+            </a>
+            <a href="blog/hard-water-damage.html" class="blog-card">
+                <h3>Hard Water Damage</h3>
+                <p>Read our guide on hard water damage for Tucson homeowners...</p>
+            </a>
+            <a href="blog/monsoon-plumbing.html" class="blog-card">
+                <h3>Monsoon Plumbing</h3>
+                <p>Read our guide on monsoon plumbing for Tucson homeowners...</p>
+            </a>
+            <a href="blog/water-heater-maintenance.html" class="blog-card">
+                <h3>Water Heater Maintenance</h3>
+                <p>Read our guide on water heater maintenance for Tucson homeowners...</p>
+            </a>
         </div>
     </div>
 </section>
@@ -232,57 +255,46 @@
 <section id="faq" style="background: #edf2f7;">
     <div class="container">
         <h2>❓ Frequently Asked Questions</h2>
-
-        <div class="faq-item open" onclick="this.classList.toggle('open')">
-            <h3>What are your business hours?</h3>
-            <div class="answer">Our listed plumbers offer a range of hours. Many provide 24/7 emergency services, while standard business hours typically run from 8:00 AM to 5:00 PM, Monday through Friday.</div>
+        <div class="faq-section">
+            <div class="faq-item open" onclick="this.classList.toggle('open')">
+                <h3>How much does a plumber cost in Tucson?</h3>
+                <div class="answer">Prices vary by job. Small repairs typically range from $150-400, while larger projects can cost $1,000-5,000. Get multiple quotes for the best value.</div>
+            </div>
+            <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h3>Are these plumbers licensed?</h3>
+                <div class="answer">All plumbers listed on our site are licensed and insured in the state of Arizona. We recommend confirming directly before hiring.</div>
+            </div>
+            <div class="faq-item" onclick="this.classList.toggle('open')">
+                <h3>Do they offer emergency service?</h3>
+                <div class="answer">Many of the plumbers listed offer 24/7 emergency service. Check individual listings for availability.</div>
+            </div>
         </div>
-
-        <div class="faq-item" onclick="this.classList.toggle('open')">
-            <h3>How do I know if I have hard water?</h3>
-            <div class="answer">Signs include white calcium buildup on faucets, spotty dishes, stiff laundry, and reduced water pressure. Testing your water is the most accurate way to determine hardness.</div>
-        </div>
-
-        <div class="faq-item" onclick="this.classList.toggle('open')">
-            <h3>What should I do in a plumbing emergency?</h3>
-            <div class="answer">Shut off the main water supply if possible, then contact an emergency plumber immediately. Many of our listed plumbers offer 24/7 emergency service.</div>
-        </div>
-
-        <div class="faq-item" onclick="this.classList.toggle('open')">
-            <h3>How often should I service my water heater?</h3>
-            <div class="answer">Annually. Drain and flush the tank to remove sediment, check the anode rod, and test the T&P relief valve to ensure optimal performance and longevity.</div>
-        </div>
-
-        <div class="faq-item" onclick="this.classList.toggle('open')">
-            <h3>Are all your listed plumbers licensed and insured?</h3>
-            <div class="answer">Yes, we list only licensed and insured plumbers in Tucson. We recommend confirming these details directly before hiring for any work.</div>
-        </div>
-
     </div>
 </section>
 
 <section id="contact">
     <div class="container">
         <h2>📬 Get a Free Quote</h2>
-        <div class="contact-form">
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="tel" name="phone" placeholder="Your Phone">
-                <textarea name="message" placeholder="Describe your plumbing issue..." required></textarea>
-                <input type="hidden" name="_subject" value="Tucson Plumber Quote Request">
-                <input type="hidden" name="_captcha" value="false">
-                <button type="submit">Request Free Quote</button>
-            </form>
-            <p style="margin-top:15px; font-size:0.85rem; color:#718096;">Tip the form to <a href="https://formsubmit.co" target="_blank">FormSubmit.co</a> — just change the email in the form action to yours. It's free.</p>
+        <div class="contact-section">
+            <div class="contact-form">
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="tel" name="phone" placeholder="Your Phone">
+                    <textarea name="message" placeholder="Describe what you need..." required></textarea>
+                    <input type="hidden" name="_subject" value="Tucson Plumber Quote Request">
+                    <input type="hidden" name="_captcha" value="false">
+                    <button type="submit">Request Free Quote</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <p>Best Plumbers in Tucson, Arizona | Helping Tucson homeowners find trusted plumbing services</p>
-        <p>© 2025 — <a href="#plumbers">Browse Plumbers</a> | <a href="#contact">Get a Quote</a></p>
+        <p>Best Plumbers in Tucson, AZ | Helping Tucson homeowners find trusted plumber services</p>
+        <p>© 2025 — <a href="#listings">Browse Plumbers</a> | <a href="#contact">Get a Quote</a></p>
     </div>
 </footer>
 

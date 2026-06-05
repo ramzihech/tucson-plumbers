@@ -1,0 +1,64 @@
+{
+  "city": "Tucson",
+  "state": "AZ",
+  "niche": "Plumber",
+  "updated": "2026-06-05",
+  "businesses": [
+    {
+      "name": "Intelligent Design Air Conditioning, Plumbing, Solar, & Electric",
+      "address": "1145 East Fort Lowell Road, Tucson, AZ",
+      "rating": 4.9,
+      "phone": "(520) 815-5091",
+      "website": "https://idesignac.com",
+      "description": "One of Tucson's most trusted full-service home service companies since 1979. They handle everything from plumbing repairs to AC installation and solar. Known for no trip charge and upfront pricing with consistently high ratings."
+    },
+    {
+      "name": "Strongbuilt Plumbing, Air, Solar & Electric",
+      "address": "Tucson, AZ",
+      "rating": 4.8,
+      "phone": "",
+      "website": "https://strongbuiltusa.com",
+      "description": "A one-stop shop for all home service needs in Tucson. StrongBuilt offers comprehensive plumbing, air conditioning, solar, and electrical services. Known for their $59 repair special and reliable same-day service."
+    },
+    {
+      "name": "Al Coronado Plumbing",
+      "address": "Tucson, AZ",
+      "rating": 4.7,
+      "phone": "",
+      "website": "",
+      "description": "Family-owned Tucson plumbing company serving the area for decades. Specializes in residential plumbing repairs, water heater installation, and drain cleaning. Known for honest pricing and quality workmanship."
+    },
+    {
+      "name": "Cal's Plumbing Inc.",
+      "address": "Tucson, AZ",
+      "rating": 4.6,
+      "phone": "",
+      "website": "",
+      "description": "A well-established Tucson plumbing company offering comprehensive residential and commercial plumbing services. Specializes in slab leak repair, repiping, and sewer line replacement. Known for reliable emergency service."
+    },
+    {
+      "name": "Plumber of Tucson",
+      "address": "Tucson, AZ",
+      "rating": 4.5,
+      "phone": "",
+      "website": "",
+      "description": "Tucson's go-to plumbing service for fast, reliable repairs. They offer 24/7 emergency service and specialize in everything from clogged drains to full repiping projects. Licensed, bonded, and insured."
+    },
+    {
+      "name": "Curtis Plumbing",
+      "address": "Tucson, AZ",
+      "rating": 4.4,
+      "phone": "",
+      "website": "",
+      "description": "A trusted name in Tucson plumbing for over 20 years. Curtis Plumbing offers expert water heater installation, drain cleaning, and comprehensive pipe repair services throughout the Tucson metro area."
+    },
+    {
+      "name": "Nu Flow Tucson",
+      "address": "3650 North Oracle Road, Tucson, AZ",
+      "rating": 4.9,
+      "phone": "(520) 468-7449",
+      "website": "https://nuflowtucson.com",
+      "description": "Nu Flow Tucson is a trusted plumbing service in Tucson, AZ. They offer reliable residential and commercial plumbing solutions. Licensed and insured with a commitment to quality workmanship."
+    }
+  ]
+}

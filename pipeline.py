@@ -19,7 +19,7 @@ NICHE = "Plumber"  # "Plumber", "Dentist", "HVAC", "Dog Walker", etc.
 DOMAIN_NAME = "best-plumbers-tucson"
 
 # Output files
-OUT_DIR = Path(f"/c/Users/Ramzi/web_build")
+OUT_DIR = Path("C:/Users/Ramzi/web_build")
 DATA_FILE = OUT_DIR / "listings.json"
 INDEX_FILE = OUT_DIR / "index.html"
 BLOG_DIR = OUT_DIR / "blog"
