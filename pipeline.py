@@ -379,7 +379,7 @@ def build_site(businesses):
         <h2>📬 Get a Free Quote</h2>
         <div class="contact-section">
             <div class="contact-form">
-                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <form action="https://formsubmit.co/gloaminggallery@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <input type="tel" name="phone" placeholder="Your Phone">
